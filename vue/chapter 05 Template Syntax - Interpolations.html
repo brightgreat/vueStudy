@@ -16,16 +16,15 @@
 	<p>{{ message.split('').reverse().join('') }}</p>
 </div>
 <script type="text/javascript">
-var vm = new Vue({
-	el : "#app",
-	data : {
-		msg : "hi vue",
-		rawHtml : '<span style="color:red">this is should be red</span>',
+	var data={msg : "hi vue",
+		rawHtml : 'Using mustaches:  <span style="color:red">this is should be red</span>',
 		color:'blue',
 		number : 10,
 		ok : 1,
-		message : "vue"
-	}
+		message : "vue"}
+var vm = new Vue({
+	el : "#app",
+	data : data
 });
 vm.msg = "hi....";
 </script>
